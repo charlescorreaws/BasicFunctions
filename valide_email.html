@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		
+		<script language="javascript">
+			
+			function ValidarEmail() 
+			{
+				var email = Form_Demo.Email_User.value;
+				var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+				var freeRegex = /^[\w-\.]+@([hotmail+\.]|[yahoo+\.]|[gmail+\.]|[yahoo.com+\.]|)+[\w-]{2,4}$/;
+				
+				if(!email.match(emailRegex)) 
+				{
+					alert("E-mail é invalido")
+					return false;
+				}
+				
+				if(email.match(freeRegex))
+				{   
+					alert("Este é um endereço de email gratuito!")
+					return false;
+				}
+				return true; 
+			}
+		</script>
+	</head>
+	<body>
+		
+		
+		<form name='Form_Demo' >
+			email: <input type='text' name='Email_User'>
+			<input type='button' value='Ok' onclick="ValidarEmail();">
+		</form>		
+	</body>
+</html>
