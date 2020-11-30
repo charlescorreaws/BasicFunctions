@@ -12,7 +12,7 @@
 	
 	
 	function cUrlGetData($Url_APIREST, $Dados_POST_APIREST = null, $Dados_Header_APIREST = null, $Dados_UserAgent_APIREST = null) {
-      
+	
     $ch = curl_init();
     
     $TimeOut = 30;
