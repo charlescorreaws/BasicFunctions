@@ -7,7 +7,7 @@
  * @param Nenhum
  * @return String
  */
-
+ 
 function Saudacao() {
     $hr = date("H");
     if ($hr >= 12 && $hr < 18) {
